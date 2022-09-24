@@ -1,4 +1,4 @@
-const cardArray = [
+var cardArray = [
     {
         name: 'card01',
         img: 'assets/img/card01.png',
@@ -50,3 +50,52 @@ const cardArray = [
 ]
 
 cardArray.sort(() => 0.5 - Math.random());
+
+var gridDisplay = document.getElementById("card-grid");
+
+let cardsChosen = [];
+let cardsChosenIDs = [];
+let cardsWon = [];
+
+createBoard();
+
+function createBoard() {
+    for(let i = 0; i < cardArray.length; i++) {
+        var card = document.createElement('img');
+        card.setAttribute('src', 'assets/img/back02.png');
+        card.setAttribute('data-id', i);
+        card.setAttribute('class', 'card');
+        card.addEventListener('click', flipCard);
+        gridDisplay.append(card);
+    }
+}
+function flipCard() {
+    let cardID = this.getAttribute('data-id');
+    cardsChosen.push(cardArray[cardID].name);
+    cardsChosenIDs.push(cardID);
+    this.setAttribute('src', cardArray[cardID].img);
+    if (cardsChosen.length >= 2) {
+        setTimeout(checkMatch, 500);
+    }
+}
+function checkMatch() {
+    var cards = document.querySelectorAll('img');
+    if (cardsChosen[0] === cardsChosen[1]) {
+        alert('You have found a match!');
+        cards[cardsChosenIDs[0]].setAttribute('src', 'assets/img/blank.png');
+        cards[cardsChosenIDs[1]].setAttribute('src', 'assets/img/blank.png');
+        cards[cardsChosenIDs[0]].removeEventListener('click', flipCard);
+        cards[cardsChosenIDs[1]].removeEventListener('click', flipCard);
+        cardsWon.push(cardsChosen);
+    } 
+    else {
+        cards[cardsChosenIDs[0]].setAttribute('src', 'assets/img/back02.png');
+        cards[cardsChosenIDs[1]].setAttribute('src', 'assets/img/back02.png');
+        alert("Try Again...");
+    }
+    cardsChosen = [];
+    cardsChosenIDs = [];
+    if (cardsWon.length == (cardArray.length/2)) {
+        alert("You Win!");
+    }
+}
