@@ -82,8 +82,8 @@ function checkMatch() {
     var cards = document.querySelectorAll('img');
     if (cardsChosen[0] === cardsChosen[1]) {
         alert('You have found a match!');
-        cards[cardsChosenIDs[0]].setAttribute('src', 'assets/img/blank.png');
-        cards[cardsChosenIDs[1]].setAttribute('src', 'assets/img/blank.png');
+        cards[cardsChosenIDs[0]].setAttribute('src', 'assets/img/back01.png');
+        cards[cardsChosenIDs[1]].setAttribute('src', 'assets/img/back01.png');
         cards[cardsChosenIDs[0]].removeEventListener('click', flipCard);
         cards[cardsChosenIDs[1]].removeEventListener('click', flipCard);
         cardsWon.push(cardsChosen);

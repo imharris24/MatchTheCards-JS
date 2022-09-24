@@ -1,7 +1,17 @@
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: #2f71a2;
+}
 .card {
     height: 100px;
     width: auto;
 }
 .game-title {
-    
+    margin-top: 0px;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    background-color: #2f71a2;
 }
