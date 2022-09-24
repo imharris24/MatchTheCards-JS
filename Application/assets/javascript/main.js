@@ -98,8 +98,8 @@ function checkMatch() {
     else {
         cards[cardsChosenIDs[0]].setAttribute('src', 'assets/img/back02.png');
         cards[cardsChosenIDs[1]].setAttribute('src', 'assets/img/back02.png');
-        sleep(1000);
         resultDisplay.innerHTML = "NOT A MATCH!";
+        sleep(1000);
     }
     cardsChosen = [];
     cardsChosenIDs = [];
