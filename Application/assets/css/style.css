@@ -26,3 +26,12 @@ body {
     display: flex;
     margin: 64px 0 0 0;
 }
+#result {
+    margin-top: 0px;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    background-color: black;
+    margin-top: 64px;
+}

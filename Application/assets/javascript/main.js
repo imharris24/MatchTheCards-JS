@@ -52,13 +52,20 @@ var cardArray = [
 cardArray.sort(() => 0.5 - Math.random());
 
 var gridDisplay = document.getElementById("card-grid");
+var resultDisplay = document.getElementById("result");
 
 let cardsChosen = [];
 let cardsChosenIDs = [];
 let cardsWon = [];
 
 createBoard();
-
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
 function createBoard() {
     for(let i = 0; i < cardArray.length; i++) {
         var card = document.createElement('img');
@@ -81,7 +88,7 @@ function flipCard() {
 function checkMatch() {
     var cards = document.querySelectorAll('img');
     if (cardsChosen[0] === cardsChosen[1]) {
-        alert('You have found a match!');
+        resultDisplay.innerHTML = "FOUND A MATCH!";
         cards[cardsChosenIDs[0]].setAttribute('src', 'assets/img/back01.png');
         cards[cardsChosenIDs[1]].setAttribute('src', 'assets/img/back01.png');
         cards[cardsChosenIDs[0]].removeEventListener('click', flipCard);
@@ -91,11 +98,12 @@ function checkMatch() {
     else {
         cards[cardsChosenIDs[0]].setAttribute('src', 'assets/img/back02.png');
         cards[cardsChosenIDs[1]].setAttribute('src', 'assets/img/back02.png');
-        alert("Try Again...");
+        sleep(1000);
+        resultDisplay.innerHTML = "NOT A MATCH!";
     }
     cardsChosen = [];
     cardsChosenIDs = [];
     if (cardsWon.length == (cardArray.length/2)) {
-        alert("You Win!");
+        resultDisplay.innerHTML = "YOU WIN!";
     }
 }
