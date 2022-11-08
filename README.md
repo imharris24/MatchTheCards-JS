@@ -42,7 +42,7 @@ closer to winning. Once all cards have been matched, player wins.
 
 Here are some related projects,
 
-[Stopwatch](https://github.com/imharris24/Stopwatch)
+[Stopwatch](https://github.com/imharris24/Stopwatch-JS)
 
 [GIF-GIF Go!](https://github.com/imharris24/GifGifGo-JS)
 
