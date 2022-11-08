@@ -42,7 +42,7 @@ closer to winning. Once all cards have been matched, player wins.
 
 Here are some related projects,
 
-[Cricket Academy Manager](https://github.com/imharris24/CAM-WEB)
+[Stopwatch](https://github.com/imharris24/Stopwatch)
 
 [GIF-GIF Go!](https://github.com/imharris24/GifGifGo-JS)
 
