@@ -13,13 +13,13 @@ closer to winning. Once all cards have been matched, player wins.
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/Screenshots/SC001.png)
+![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/screenshot/scr01.png)
 
-![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/Screenshots/SC002.png)
+![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/screenshot/scr02.png)
 
-![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/Screenshots/SC003.png)
+![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/screenshot/scr03.png)
 
-![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/Screenshots/SC004.png)
+![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/screenshot/scr04.png)
 
 
 ## Tech Stack
@@ -33,7 +33,7 @@ closer to winning. Once all cards have been matched, player wins.
 
 ## How to run this application?
 
-- Download application folder from this repository.
+- Download src folder from this repository.
 - Open index.html with any browser.
 
 
