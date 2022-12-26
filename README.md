@@ -1,7 +1,7 @@
 
-# Match The Cards
+# Card Game
 
-Match The Cards is a game that requires players to match similar cards. Player need to find a match for a card. If a pair of card matches then player moves 
+This is a game that requires players to match similar cards. Player need to find a match for a card. If a pair of card matches then player moves 
 closer to winning. Once all cards have been matched, player wins.
 
 ## Features
