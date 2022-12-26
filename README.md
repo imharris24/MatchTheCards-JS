@@ -13,13 +13,13 @@ closer to winning. Once all cards have been matched, player wins.
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/screenshot/scr01.png)
+![App Screenshot](https://raw.githubusercontent.com/imharris24/Card-Game-JS/main/screenshot/scr01.png)
 
-![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/screenshot/scr02.png)
+![App Screenshot](https://raw.githubusercontent.com/imharris24/Card-Game-JS/main/screenshot/scr02.png)
 
-![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/screenshot/scr03.png)
+![App Screenshot](https://raw.githubusercontent.com/imharris24/Card-Game-JS/main/screenshot/scr03.png)
 
-![App Screenshot](https://raw.githubusercontent.com/imharris24/MatchTheCards-JS/main/screenshot/scr04.png)
+![App Screenshot](https://raw.githubusercontent.com/imharris24/Card-Game-JS/main/screenshot/scr04.png)
 
 
 ## Tech Stack
